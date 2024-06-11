@@ -1,0 +1,294 @@
+/* General resets and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fefdf8;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Full screen image container */
+.full-screen-image1 {
+  width: 100%;
+  height: 44vh;
+  position: relative;
+}
+
+/* Billedet selv */
+.full-screen-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LINJEOPDELERE */
+.horizontal-line1 {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: black; /* Farven på stregen */
+  width: 90%; /* Gør stregen så bred som muligt */
+  margin-left: 25px; /* Fjerner eventuel margin */
+  position: absolute;
+  top: 13%;
+}
+
+.horizontal-line2 {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: black; /* Farven på stregen */
+  width: 90%; /* Gør stregen så bred som muligt */
+  position: absolute;
+  margin-left: 25px;
+  top: 185%;
+}
+
+/* Content container over image */
+.tema3-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.tema3-container .content-row {
+  margin-bottom: 40px;
+  padding-left: 13px;
+}
+
+/* Headings */
+.tema3_overskrift,
+.tema3_overskrift2,
+.tema3_overskrift3,
+.tema3_overskrift4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  padding: 10px 0;
+  letter-spacing: 1.5px;
+}
+
+/* Paragraphs */
+.tema3_brødtekst p,
+.tema3_brødtekst2 p,
+.tema3_brødtekst3 p,
+.tema3_brødtekst4 p {
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 47ch;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+.tema3_brødtekst4 p,
+.tema3_brødtekst2 p {
+  max-width: 42ch;
+}
+
+/* Links */
+.link-hjemmeside a {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  border: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.link-hjemmeside a:hover {
+  color: #798c35;
+}
+
+/* Image grid */
+.billeder-overskrift {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin-top: 1100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.tema3-billeder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+  justify-content: center; /* Center the images horizontally */
+}
+
+.tema3-billeder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  border-top: solid 1px #000000;
+  width: 90%;
+  margin-left: 25px;
+  margin-top: 62px;
+}
+
+/* Back to top button */
+.back-to-top {
+  display: none; /* Start med at skjule knappen */
+  position: fixed;
+  bottom: 35px;
+  right: 37%;
+  z-index: 100;
+  padding: 10px 15px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  border: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  color: #798c35;
+  transform: translateY(-5px);
+}
+
+body {
+  height: 2300px; /* For at demonstrere scroll-effekten */
+}
+
+/* DESKTOPVERSION */
+@media (min-width: 769px) {
+  /* BAGGRUNDSBILLE */
+  .full-screen-image1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Billedet selv */
+  .full-screen-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* LINJEOPDELERE */
+  .horizontal-line1 {
+    margin-left: 60px; /* Fjerner eventuel margin */
+    top: 13%;
+  }
+
+  .horizontal-line2 {
+    margin-left: 70px; /* Fjerner eventuel margin */
+    top: 115%;
+  }
+
+  footer {
+    border-top: solid 1px #000000;
+    width: 90%;
+    margin-left: 73px;
+    padding-top: 0px;
+    padding-bottom: 140px;
+  }
+
+  /* TEKST STYLING */
+  .tema3-container {
+    display: grid;
+    padding: 25px; /* Juster padding efter behov */
+    grid-template-columns: 1fr 1fr; /* Bevar den ønskede grid-template-columns */
+  }
+
+  /* Juster stylingen af .content-row, hvis nødvendigt */
+  .content-row {
+    margin-left: 160px;
+    max-width: none; /* Fjern maksimal bredde, hvis det ikke er nødvendigt */
+  }
+
+  .tema3_overskrift,
+  .tema3_overskrift2,
+  .tema3_overskrift3,
+  .tema3_overskrift4 {
+    font-size: 30px;
+  }
+
+  .tema3_brødtekst p,
+  .tema3_brødtekst2 p,
+  .tema3_brødtekst3 p,
+  .tema3_brødtekst4 p {
+    font-size: 15px;
+    max-width: 49ch;
+  }
+
+  .tema3_brødtekst p,
+  .tema3_brødtekst2 p,
+  .tema3_brødtekst3 p {
+    margin-top: 5px;
+  }
+
+  /* LINK */
+  .link-hjemmeside a {
+    font-size: 16px;
+  }
+
+  /* PROJEKT BILLEDER */
+  .billeder-overskrift {
+    font-size: 45px;
+    margin-top: 5px;
+  }
+
+  .tema3-billeder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in desktop view */
+    gap: 0px;
+    margin: 300px;
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+
+  .tema3-billeder .image-item {
+    grid-column: span 1; /* Each image spans one column in desktop view */
+    grid-row: span 1; /* Each image spans one row in desktop view */
+  }
+
+  .tema3-billeder .image-item:nth-child(1),
+  .tema3-billeder .image-item:nth-child(2) {
+    height: 90%; /* Adjust height as needed */
+    width: 90%;
+  }
+
+  .tema3-billeder .image-item:nth-child(3),
+  .tema3-billeder .image-item:nth-child(4) {
+    height: 90%; /* Adjust height as needed */
+    width: 90%;
+  }
+
+  /* BUTTON */
+  .back-to-top {
+    font-size: 16px;
+    right: 47%;
+    bottom: 20px;
+    height: 100px;
+  }
+
+  body {
+    height: 1800px; /* For at demonstrere scroll-effekten */
+  }
+}

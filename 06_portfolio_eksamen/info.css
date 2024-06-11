@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fefdf8;
+}
+
+/*INFO.HTML*/
+.info.html.html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.full-screen-image1 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+/* Billedet selv */
+.full-screen-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal-line4 {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: #000000; /* Farven på stregen */
+  width: 100%; /* Gør stregen så bred som muligt */
+  margin: 0px; /* Fjerner eventuel margin */
+  position: absolute;
+  top: 13%;
+}
+
+/* BAGGRUNDSBILLEDERNE */
+.full-screen-image2 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  padding-top: 0px;
+}
+
+/* Billedet selv */
+.full-screen-image2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Billedet selv */
+.full-screen-image3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-screen-image3 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  padding-top: 0px;
+}
+
+/* Billedet selv */
+.full-screen-image4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-screen-image4 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  padding-top: 0px;
+}
+
+/* Billedet selv */
+.full-screen-image5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-screen-image5 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin-top: -20px;
+}
+
+/* HVEM ER JEG TEKST */
+.hvem-er-jeg-tekstboks {
+  position: absolute; /* Placér tekstboksen absolut */
+  top: 35%; /* Centrer tekstboksen vertikalt */
+  left: 45%; /* Centrer tekstboksen horisontalt */
+  transform: translate(-50%, -50%); /* Juster for 50% for at centrer */
+  padding: 10px;
+  z-index: 2; /* Sørg for, at tekstboksen er over billedet */
+  border: 1px solid #000000;
+  padding-bottom: 0px;
+}
+
+.hvem-er-jeg-tekstboks h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  padding-left: 9px;
+}
+
+.hvem-er-jeg-tekstboks p {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 10px;
+  min-width: 45ch;
+}
+
+/* HVEM ER JEG BILLEDE */
+.jose_billede img {
+  display: block; /* Fjern mellemrum under billedet */
+  max-width: 50%; /* Gør billedet responsivt */
+  height: auto; /* Bevar billedets højde-forhold */
+  border: 1px solid #000000; /* Sort ramme rundt om billedet */
+  box-sizing: border-box; /* Sørg for at padding og border inkluderes i elementets samlede bredde og højde */
+  padding: 5px;
+  z-index: 2;
+  position: absolute;
+  top: 49%;
+  left: 43%;
+}
+
+/* STREGEN DER INDDELER SIDEN */
+.horizontal-line {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: #000000; /* Farven på stregen */
+  width: 100%; /* Gør stregen så bred som muligt */
+  margin: 0px; /* Fjerner eventuel margin */
+  position: absolute;
+  top: 89%;
+  z-index: 2;
+}
+
+/* CV TEKST */
+.cv-tekstboks {
+  position: absolute; /* Placér tekstboksen absolut */
+  top: 123%; /* Centrer tekstboksen vertikalt */
+  left: 50%; /* Centrer tekstboksen horisontalt */
+  transform: translate(-50%, -50%); /* Juster for 50% for at centrer */
+  padding: 10px;
+  z-index: 2; /* Sørg for, at tekstboksen er over billedet */
+  border: 1px solid #000000;
+}
+
+.cv-tekstboks p {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 10px;
+  min-width: 48ch;
+}
+
+.cv-tekstboks h3 {
+  padding-left: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.horizontal-line2 {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: #000000; /* Farven på stregen */
+  width: 100%; /* Gør stregen så bred som muligt */
+  margin: 0px; /* Fjerner eventuel margin */
+  position: absolute;
+  top: 157%;
+}
+
+/* EGENSKABER - SPROG */
+.egenskaber-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.sprog {
+  position: absolute;
+  top: 162%;
+  left: 15%;
+  border: 1px solid #000000;
+  padding: 10px;
+  z-index: 2;
+}
+
+.sprog,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+}
+
+.sprog ul {
+  list-style-type: none; /* Fjern bulletpoints */
+  padding-top: 10px; /* Fjern standard padding */
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sprog li {
+  margin-bottom: 10px; /* Giv lidt afstand mellem elementerne */
+}
+
+/* EGENSKABER - KOMPETENCER */
+.kompetencer {
+  position: absolute;
+  top: 162%;
+  left: 40%;
+  border: 1px solid #000000;
+  padding: 10px;
+  z-index: 2;
+}
+
+.kompetencer,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+}
+
+.kompetencer ul {
+  list-style-type: none; /* Fjern bulletpoints */
+  padding-top: 10px; /* Fjern standard padding */
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.kompetencer li {
+  margin-bottom: 10px; /* Giv lidt afstand mellem elementerne */
+}
+
+/* EGENSKABER - PERSONLIGE EGENSKABER */
+.personlige-egenskaber {
+  border: 1px solid #000000;
+  padding: 10px;
+  position: absolute;
+  width: 88%;
+  top: 185%;
+  left: 6%;
+}
+
+.personlige-egenskaber ul {
+  list-style-type: none; /* Fjern bulletpoints */
+  padding: 0; /* Fjern standard padding */
+  display: flex; /* Brug flexbox */
+  flex-wrap: wrap; /* Tillad wrap */
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.personlige-egenskaber li {
+  flex: 1 0 50%; /* Del listen i to kolonner */
+  margin-bottom: 10px; /* Giv lidt afstand mellem elementerne */
+}
+
+.personlige-egenskaber h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.horizontal-line3 {
+  height: 1px; /* Tykkelse af stregen */
+  background-color: #000000; /* Farven på stregen */
+  width: 100%; /* Gør stregen så bred som muligt */
+  margin: 0px; /* Fjerner eventuel margin */
+  position: absolute;
+  top: 217%;
+  z-index: 2;
+}
+
+/* KNAP I FOOTEREN */
+body {
+  height: 1820px; /* For at demonstrere scroll-effekten */
+}
+.back-to-top {
+  display: none; /* Start med at skjule knappen */
+  position: fixed;
+  bottom: 65px;
+  right: 37%;
+  z-index: 100;
+  padding: 10px 16px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  border: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  color: #798c35;
+  transform: translateY(-5px);
+}
+
+/* DEKSTOPVERSIONEN */
+@media (min-width: 769px) {
+  /*HVEM ER JEG OG MIT BILLEDE*/
+  .hvem-er-jeg-tekstboks {
+    top: 50%;
+    left: 35%;
+    padding: 20px;
+    max-width: 65ch;
+  }
+
+  .hvem-er-jeg-tekstboks h3 {
+    font-size: 30px;
+  }
+
+  .hvem-er-jeg-tekstboks p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .jose_billede img {
+    width: 30%;
+    top: 20%;
+    left: 51%;
+  }
+
+  /*MIT CV*/
+  .cv-tekstboks {
+    top: 128%;
+    left: 50%;
+    padding: 20px;
+    max-width: 65ch;
+  }
+
+  .cv-tekstboks p {
+    font-size: 15px;
+    line-height: 26px;
+    min-width: 50ch;
+  }
+
+  .cv-tekstboks h3 {
+    font-size: 30px;
+  }
+
+  /*MINE EGENSKABER OG KOMPETENCER*/
+  .egenskaber-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Juster alignment for at forhindre overlap */
+  }
+
+  .sprog,
+  .kompetencer,
+  .personlige-egenskaber {
+    flex: 1;
+    margin: 0 10px;
+    width: auto; /* Fjern standard bredde for mindre enheder */
+    text-align: center;
+  }
+
+  .sprog h3,
+  .kompetencer h3,
+  .personlige-egenskaber h3 {
+    font-size: 30px;
+  }
+
+  .kompetencer ul {
+    font-size: 15px;
+  }
+
+  .sprog ul {
+    font-size: 15px;
+  }
+
+  .kompetencer {
+    top: 181%;
+    left: 67%;
+    margin: 15px;
+  }
+
+  .sprog {
+    top: 181%;
+    left: 16.7%;
+    width: 15%;
+  }
+
+  .personlige-egenskaber ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .personlige-egenskaber li {
+    flex: 1 0 50%;
+    font-size: 15px;
+  }
+
+  .personlige-egenskaber {
+    left: 34.3%;
+    top: 177%;
+    width: 30%;
+  }
+
+  .personlige-egenskaber h3 {
+    margin-left: 0px;
+    white-space: nowrap;
+  }
+
+  /*VANDRETTE LINJER OVER SIDEN*/
+  .horizontal-line {
+    top: 90%;
+    background-color: #000000;
+    height: 1px; /* Tykkelse af stregen */
+  }
+
+  .horizontal-line2 {
+    top: 167%;
+    z-index: 2;
+    background-color: #000000;
+    height: 1px; /* Tykkelse af stregen */
+  }
+
+  .horizontal-line3 {
+    height: 1px; /* Tykkelse af stregen */
+    background-color: #000000; /* Farven på stregen */
+    width: 100%; /* Gør stregen så bred som muligt */
+    margin: 0px; /* Fjerner eventuel margin */
+    position: absolute;
+    top: 218%;
+  }
+
+  .horizontal-line4 {
+    height: 1px; /* Tykkelse af stregen */
+    background-color: #000000; /* Farven på stregen */
+    width: 100%; /* Gør stregen så bred som muligt */
+    margin: 0px; /* Fjerner eventuel margin */
+    position: absolute;
+    top: 13%;
+  }
+
+  /* BAGGRUNDSBILLEDERNE */
+  .full-screen-image1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* Billedet selv */
+  .full-screen-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .full-screen-image2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 0px;
+  }
+
+  /* Billedet selv */
+  .full-screen-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Billedet selv */
+  .full-screen-image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .full-screen-image3 {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    padding-top: 0px;
+    object-fit: cover;
+  }
+
+  /* Billedet selv */
+  .full-screen-image4 img {
+    display: none;
+  }
+
+  .full-screen-image4 {
+    display: none;
+  }
+
+  /* Billedet selv */
+  .full-screen-image5 img {
+    display: none;
+  }
+
+  .full-screen-image5 {
+    display: none;
+  }
+
+  /*FOOTER/BACK TO TOP KNAP*/
+  .back-to-top {
+    right: 20px;
+    font-size: 16px;
+    left: 0%;
+  }
+
+  body {
+    height: 1000px; /* For at demonstrere scroll-effekten */
+  }
+}

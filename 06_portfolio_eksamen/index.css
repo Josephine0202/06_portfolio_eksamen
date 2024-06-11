@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*INDEX.HTML*/
+.index.html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Containeren for billedet */
+.full-screen-image {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% af viewport højden */
+  overflow: hidden; /* Sikrer, at billedet ikke skaber scrollbars */
+}
+
+/* Billedet selv */
+.full-screen-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Dækker hele containeren uden at forvride billedets forhold */
+  transform: translate(-50%, -50%); /* Centrerer billedet */
+}
+
+.button_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 37%;
+  top: 80%; /* Placerer toppen af knappen 50% nede */
+  transform: translateY(-50%); /* Flytter knappen op med halvdelen af dens egen højde */
+}
+
+.button {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  border: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0); /* Transparent hvid baggrund */
+  color: #798c35;
+  transform: translateY(-5px);
+}
+
+@media (min-width: 769px) {
+  .full-screen-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Dækker hele containeren uden at forvride billedets forhold */
+    transform: translate(-50%, -50%); /* Centrerer billedet */
+  }
+  .button_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 45%;
+    top: 80%; /* Placerer toppen af knappen 50% nede */
+    transform: translateY(-50%); /* Flytter knappen op med halvdelen af dens egen højde */
+  }
+
+  .button {
+    font-size: 17px;
+  }
+}
